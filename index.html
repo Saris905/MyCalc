@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Calc</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="wrap">
+      <div class="calc">
+         <div class="item input">
+            <form name="form"><input type="text" name="textview" readonly></form>
+         </div>
+         <button value="false" class="clean" value="C" onclick="clean()">C</button>
+         <button value="false" class="back" value="<" onclick="back()">&larr;</button>
+         <button value="false" onclick="insert('+')">+</button>
+         <button value="false" onclick="insert('-')">-</button>
+         <button value="false" onclick="insert('*')">&times;</button>
+         <button value="false" onclick="insert('/')">&divide;</button>
+         <button value="7" onclick="insert(7)">7</button>
+         <button value="8" onclick="insert(8)">8</button>
+         <button value="9" onclick="insert(9)">9</button>
+         <button value="false" onclick="insert('(')">(</button>
+         <button value="4" onclick="insert(4)">4</button>
+         <button value="5" onclick="insert(5)">5</button>
+         <button value="6" onclick="insert(6)">6</button>
+         <button value="false" onclick="insert(')')">)</button>
+         <button value="1" onclick="insert(1)">1</button>
+         <button value="2" onclick="insert(2)">2</button>
+         <button value="3" onclick="insert(3)">3</button>
+         <button value="false" class="equal" onclick="equal()">=</button>
+         <button value="0" class="zero" onclick="insert(0)">0</button>
+         <button value="false" onclick="insert('.')">.</button>
+      </div>
+      <div class="switcher">
+         <input type="checkbox" class="switch" id="switch">
+         <label for="switch" class="switch-for">Night mode</label>
+      </div>
+      <!--<div class="switchers">-->
+         <!--<form name="form"><input type="text" class="textString"></form>-->
+
+
+         <!--<input type="checkbox" class="switch" id="switch1" value="1">-->
+         <!--<label for="switch1" class="switch-for1">+1</label>-->
+
+         <!--<input type="checkbox" class="switch" id="switch2" value="2">-->
+         <!--<label for="switch2" class="switch-for2">+2</label>-->
+
+         <!--<input type="checkbox" class="switch" id="switch3" value="3">-->
+         <!--<label for="switch3" class="switch-for3">+3</label>-->
+
+         <!--<button class="countBtn" onclick="count()">Рассчитать</button>-->
+      <!--</div>-->
+   </div>
+<script src="js/main.js"></script>
+</body>
+</html>
